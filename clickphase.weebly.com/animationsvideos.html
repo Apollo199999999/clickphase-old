@@ -312,28 +312,41 @@
 	<script type="text/javascript" src="cdn2.editmysite.com/js/lang/en/stld565.js?buildTime=1668695285&amp;"></script>
 	<script> _W.themePlugins = [];</script>
 	<script type="text/javascript"> _W.recaptchaUrl = "www.google.com/recaptcha/api.js"; </script>
-	<script type="text/javascript"><!-
-	
-	
-function initFlyouts(){
-initPublishedFlyoutMenus(
-[{"id":"591388585815344496","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"696971218928492079","title":"Software","url":"software.html","target":"","nav_menu":false,"nonclickable":false},{"id":"562857749728063821","title":"Animations\/Videos","url":"animationsvideos.html","target":"","nav_menu":false,"nonclickable":false},{"id":"832025153225078461","title":"About\/Contact","url":"aboutcontact.html","target":"","nav_menu":false,"nonclickable":false}],
-"562857749728063821",
-'',
-'active',
-false,
-{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
-{}
-)
-}
+	<script type="text/javascript">
+
+		function initFlyouts() {
+			initPublishedFlyoutMenus(
+				[{ "id": "591388585815344496", "title": "Home", "url": "index.html", "target": "", "nav_menu": false, "nonclickable": false }, { "id": "696971218928492079", "title": "Software", "url": "software.html", "target": "", "nav_menu": false, "nonclickable": false }, { "id": "562857749728063821", "title": "Animations\/Videos", "url": "animationsvideos.html", "target": "", "nav_menu": false, "nonclickable": false }, { "id": "832025153225078461", "title": "About\/Contact", "url": "aboutcontact.html", "target": "", "nav_menu": false, "nonclickable": false }],
+				"562857749728063821",
+				'',
+				'active',
+				false,
+				{ "navigation\/item": "<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n", "navigation\/flyout\/list": "<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n", "navigation\/flyout\/item": "<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n" },
+				{}
+			)
+		}
+
+		function hideNotice() {
+			var x = document.getElementById("notice-div");
+			x.style.display = "none";
+		}
 //-->
 	</script>
 
 
 </head>
 
-<body
-	class="header-page  wsite-page-animationsvideos  full-width-body-on header-overlay-on alt-nav-off  wsite-theme-dark">
+<body class="header-page  wsite-page-animationsvideos  full-width-body-on header-overlay-on alt-nav-off  wsite-theme-dark">
+	<div style="background: black; left: 50%; transform: translate(-50%, 0); bottom: 0; width: calc(95vw - 30px); margin-bottom: 10px; padding: 0.5em 1em !important; min-height: 35px; position: fixed; z-index: 2147483647;"
+		id="notice-div">
+		<button style="float: right; margin-top: 5px; margin-left: 10px;" onclick="hideNotice()">X</button>
+		<p style="color: white; margin: 0px !important;">This site is an archived version of ClickPhase's
+			old Weebly site, which was originally located at
+			<a>https://clickphase.weebly.com</a>. This site is therefore no longer being updated. To visit
+			ClickPhase's new official site, go to <a>https://clickphase.vercel.app</a>.
+		</p>
+	</div>
+	
 	<div class="wrapper">
 		<div class="birdseye-header">
 			<div class="nav-wrap">
@@ -481,51 +494,7 @@ false,
 
 		</div>
 
-		<div class="footer-wrap">
-			<div class="footer">
 
-				<style type="text/css">
-					@font-face {
-						font-family: SQMarket-Medium;
-						font-style: normal;
-						font-weight: 500;
-						src:
-							url("http://cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff2") format("woff2"),
-							url("http://cdn2.editmysite.com/fonts/SQ_Market/sqmarket-medium.woff") format("woff");
-					}
-				</style>
-
-				<div id="weebly-footer-signup-container-v3">
-					<a href="https://www.weebly.com/signup?utm_source=internal&amp;utm_medium=footer" target="_blank"
-						class="signup-container-header" id="signup-link-href">
-						<div class="powered-by">
-							<div class="footer-published-ab-powered-by">
-								Powered by <span class="link weebly-icon"></span>
-								<img class="footer-ab-published-toast-image"
-									src="cdn2.editmysite.com/images/site/footer/footer-toast-published-image-1.png">
-								<span class="footer-ab-published-toast-text">Create your own unique website with
-									customizable templates.</span>
-								<span class="footer-ab-published-toast-button-wrapper">
-									<button class="footer-published-ab-button">Get Started</button>
-								</span>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<script type="text/javascript"
-					src="cdn2.editmysite.com/js/site/footerSignupb1ab.js?buildTime=1668695285"></script>
-				<script type="text/javascript">
-					if (document.readystate === 'complete') {
-						Weebly.footer.setupContainer('cdn2.editmysite.com', '1668695285');
-					} else {
-						document.addEventListener('DOMContentLoaded', function () {
-							Weebly.footer.setupContainer('cdn2.editmysite.com', '1668695285');
-						});
-					}
-				</script>
-			</div>
-		</div><!-- end footer-wrap -->
 	</div><!-- /.wrapper -->
 
 	<div id="navMobile" class="nav mobile-nav">
